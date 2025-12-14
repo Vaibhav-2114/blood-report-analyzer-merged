@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "blood-report-analyzer"
+version = "1.0.0"
+description = "Advanced AI-powered Blood Report Analyzer with OCR, ML prediction, and CrewAI analysis"
+authors = ["Combined Project Team"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+# Web Framework
+streamlit = "^1.28.0"
+fastapi = "^0.104.0"
+uvicorn = {version = "^0.24.0", extras = ["standard"]}
+
+# PDF and Image Processing
+PyPDF2 = "^3.0.0"
+pillow = "^10.0.0"
+pdf2image = "^1.16.0"
+pytesseract = "^0.3.10"
+
+# LLM and AI
+google-generativeai = "^0.3.0"
+crewai = "^0.2.0"
+langchain = "^0.1.0"
+langchain-google-genai = "^0.0.1"
+langchain-community = "^0.0.10"
+openai = "^1.3.0"
+ollama = "^0.1.0"
+
+# ML and Data
+scikit-learn = "^1.3.0"
+joblib = "^1.3.0"
+pandas = "^2.0.0"
+
+# Utilities
+python-dotenv = "^1.0.0"
+python-multipart = "^0.0.6"
+requests = "^2.31.0"
+google-api-core = "^2.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
